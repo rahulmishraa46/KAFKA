@@ -71,7 +71,6 @@
 
 Here's the complete, meticulously formatted Markdown file ready for direct use in your GitHub repository:
 
-```markdown
 # Class Material - Week 9, Lesson 2: Apache Kafka
 
 ## Outline
@@ -84,6 +83,58 @@ Here's the complete, meticulously formatted Markdown file ready for direct use i
 7. [Case Studies](#7-case-studies)
 8. [Activities](#8-activities)
 
+---
+
+## 1. Introduction to Kafka
+
+### Why Use Kafka?
+- High throughput and fault tolerance
+- Real-time data processing
+- Scalability for big data systems
+- Decoupling of systems (producers/consumers)
+- Durability with distributed storage
+
+### Kafka Use Cases
+- Real-time analytics (e.g., fraud detection)
+- Log aggregation
+- Event sourcing
+- Stream processing pipelines
+- Messaging system replacement
+
+---
+
+## 2. Kafka Core Concepts & Architecture
+
+### Kafka Topics and Partitions
+- Topics split into partitions
+- Each partition is ordered
+- Enables parallel consumption
+- Key-based partitioning
+- Partition offset tracks message position
+
+### Kafka Message Flow Cycle
+1. Producers send messages to topics
+2. Brokers store and manage partitions
+3. Consumers read messages from partitions
+
+---
+
+## 3. Kafka Components
+- **Kafka Producer**: Sends messages to topics
+- **Kafka Consumer**: Reads messages from topics
+- **Kafka Broker**: Manages storage and replication
+- **ZooKeeper**: Manages metadata and coordination
+
+---
+
+## 4. Kafka Setup & CLI
+
+### Kafka Cluster Setup
+1. Download Kafka from [Apache Kafka site](https://kafka.apache.org/)
+2. Extract and configure `server.properties`
+3. Start ZooKeeper:
+   ```bash
+   bin/zookeeper-server-start.sh config/zookeeper.properties
 ---
 
 ## 1. Introduction to Kafka
